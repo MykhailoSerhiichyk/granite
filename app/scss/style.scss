@@ -39,6 +39,11 @@
     font-size: 12px;
     font-weight: 700;
     color: #292929;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $btn;
+    }
 }
 
 .header__menu {
@@ -70,6 +75,67 @@
 }
 
 // end header
+
+// start main
+
+.main {
+    background-image: url(../images/content/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 550px;
+    padding: 165px 0 140px;
+    color: #ffffff;
+
+    &__title {
+        font-size: 36px;
+        line-height: 40px;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-bottom: 35px;
+    }
+
+    &__text {
+        max-width: 245px;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 60px;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        color: #0d0d0d;
+        font-weight: 700;
+        font-size: 12px;
+        background-color: $btn;
+        padding: 14px;
+        max-width: 200px;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__catalog-link {
+        margin-left: 30px;
+        font-size: 12px;
+
+        span {
+            font-weight: 300;
+            margin-right: 14px;
+        }
+
+        a {
+            color: #ffffff;
+            font-weight: 700;
+        }
+    }
+}
+
+// end main
 
 @import 'media';
 
