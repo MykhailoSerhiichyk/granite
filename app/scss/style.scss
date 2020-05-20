@@ -4,7 +4,72 @@
 
 // start header
 
+.header__content {
+    position: relative;
+}
 
+.header__inner {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.header__phone {
+    margin-right: 30px;
+    margin-left: auto;
+    text-align: right;
+
+    &-number {
+        font-size: 18px;
+        font-weight: 700;
+        color: #292929;
+    }
+
+    &-text {
+        font-size: 11px;
+        color: #969696;
+    }
+}
+
+.header__btn {
+    border: 2px solid #292929;
+    padding: 7px 22px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #292929;
+}
+
+.header__menu {
+    background-color: #ffcc00;
+    padding: 19px 60px 19px 68px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            
+            a {
+                font-size: 14px;
+                color: #000;
+                font-weight: 700;
+                transition: all .3s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+// end header
 
 @import 'media';
 
