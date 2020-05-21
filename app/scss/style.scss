@@ -74,6 +74,23 @@
     }
 }
 
+.header__menu-btn {
+    cursor: pointer;
+    display: none;
+    width: 30px;
+    margin-left: auto;
+
+    &-line {
+        width: 30px;
+        height: 4px;
+        background-color: #000;
+
+        & + .header__menu-btn-line {
+            margin-top: 4px;
+        }
+    }
+}
+
 // end header
 
 // start main
