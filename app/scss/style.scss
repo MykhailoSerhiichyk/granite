@@ -339,6 +339,45 @@
 
 // end popular
 
+// start services
+
+.services {
+    padding: 75px 0 80px;
+    background-color: #f4f4f4;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 300px;
+        width: 100%;
+        border: 2px solid #ffffff;
+        text-align: center;
+        padding: 50px 0 36px;
+
+        &-images {
+            margin-bottom: 40px;
+            height: 122px;
+        }
+
+        &-title {
+            font-weight: 700;
+            border-bottom: 1px solid #c1c1c1;
+            display: inline-block;
+            line-height: 15px;
+            color: #292929;
+
+            &:hover {
+                border: none;
+            }
+        }
+    }
+}
+
+// end services
+
 @import 'media';
 
 
