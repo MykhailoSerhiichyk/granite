@@ -378,6 +378,139 @@
 
 // end services
 
+// start footer
+
+.footer__contacts {
+    background-image: url(../images/content/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 520px;
+    padding-top: 80px;
+
+    &-box {
+        max-width: 380px;
+        width: 100%;
+        background-color: #fff;
+        margin-left: auto;
+        padding: 58px 75px 70px 60px;
+    }
+
+    &-title {
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    &-phone {
+        padding-left: 30px;
+        position: relative;
+        margin-bottom: 35px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-image: url(../images/icons/phone-receiver.png);
+            left: 0;
+            top: 5px;
+        }
+
+        a {
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            color: #292929;
+
+            & + a {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    &-adress {
+        padding-left: 30px;
+        position: relative;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 35px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 15px;
+            background-image: url(../images/icons/location-pin.png);
+            left: 0;
+            top: 2px;
+        }
+    }
+
+    &-email {
+        margin-left: 30px;
+        position: relative;
+        font-size: 14px;
+        line-height: 14px;
+        color: #292929;
+        border-bottom: 1px solid #c9c9c9;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 14px;
+            height: 10px;
+            background-image: url(../images/icons/envelope.png);
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.footer__copy {
+    background-color: #292929;
+    padding: 50px 0 20px;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #ffffff;
+        margin-bottom: 25px;
+    }
+
+    &-phone {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        display: block;
+        text-align: right;
+
+        &-text {
+            font-size: 11px;
+        }
+    }
+
+    &-text {
+        font-size: 12px;
+    }
+
+    &-btn {
+        font-size: 12px;
+        font-weight: 700;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        padding: 7px;
+        max-width: 160px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+// end footer
+
 @import 'media';
 
 
